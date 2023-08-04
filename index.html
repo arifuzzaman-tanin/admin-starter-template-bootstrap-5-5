@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -84,43 +84,44 @@
                             Management</a>
                     </nav>
                 </div>
-                <div class="col-sm-12 p-3">
+                <div class="container-fluid">
                     <div class="row g-3">
                         <div class="col-sm-3">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Search by keyword</label>
+                                <input type="text" class="form-control" id="inputEmail">
+                                <label for="inputEmail">Search by keyword</label>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelect"
+                                <select class="form-select" id="selectRole"
                                     aria-label="Floating label select example">
-                                    <option selected>Select Role</option>
+                                    <option selected>Everything</option>
                                     <option value="1">Admin</option>
                                     <option value="2">System Support</option>
                                 </select>
+                                <label for="selectRole">Select user role</label>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelect"
+                                <select class="form-select" id="selectActiveStatus"
                                     aria-label="Floating label select example">
-                                    <option selected>Status</option>
+                                    <option selected>Everything</option>
                                     <option value="1">Active</option>
                                     <option value="2">Inactive</option>
                                 </select>
+                                <label for="selectActiveStatus">Active status</label>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary w-100">
-                                Add New User <span class="badge"><i class="bi-plus fs-3 mt-0 text-white"></i></span>
+                        <div class="col-sm-3 pb-3">
+                            <button type="button" class="btn btn-lg btn-primary w-100 fw-bold fs-4">
+                                <span class="badge">Add New User<i class="bi-plus text-white"></i></span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="p-3 table-responsive">
+                <div class="container-fluid table-responsive">
                     <table class="table table-striped table-sm">
                         <caption>Result 10 of 30</caption>
                         <thead>
@@ -130,7 +131,7 @@
                                 <th scope="col">Phone</th>
                                 <th scope="col">Role</th>
                                 <th scope="col">Status</th>
-                                <th scope="col"><span class="float-end">Action</span></th>
+                                <th scope="col"><span class="float-end">Activity</span></th>
                             </tr>
                         </thead>
                         <tbody>
