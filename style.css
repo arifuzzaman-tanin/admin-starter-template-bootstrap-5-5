@@ -1,0 +1,18 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.custom-tab {
+    color: black !important;
+}
+
+.custom-tab.active {
+    background: transparent !important;
+    border-bottom: 2px solid black !important;
+    border-radius: 0px !important;
+}
+.active-inactive-status{
+    width: 80px !important;
+}
